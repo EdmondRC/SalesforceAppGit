@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED14F0B-807C-4528-ABF7-93A539D82C74}|SalesforceWebApp\\SalesforceWebApp.csproj|c:\\users\\ecorbiser\\onedrive - bitner henry insurance group\\repos\\salesforceupdate\\salesforceapp\\salesforcewebapp\\pages\\salesforceaccountmatching.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3ED14F0B-807C-4528-ABF7-93A539D82C74}|SalesforceWebApp\\SalesforceWebApp.csproj|solutionrelative:salesforcewebapp\\pages\\salesforceaccountmatching.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED14F0B-807C-4528-ABF7-93A539D82C74}|SalesforceWebApp\\SalesforceWebApp.csproj|c:\\users\\ecorbiser\\onedrive - bitner henry insurance group\\repos\\salesforceupdate\\salesforceapp\\salesforcewebapp\\pages\\salesforceaccountmatching.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED14F0B-807C-4528-ABF7-93A539D82C74}|SalesforceWebApp\\SalesforceWebApp.csproj|solutionrelative:salesforcewebapp\\pages\\salesforceaccountmatching.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E6EC2-C1E9-28E7-BB48-173FDAFAC06A}|SalesforceApp\\SalesforceApp.csproj|c:\\users\\ecorbiser\\onedrive - bitner henry insurance group\\repos\\salesforceupdate\\salesforceapp\\salesforceapp\\services\\mappingconfigurationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E6EC2-C1E9-28E7-BB48-173FDAFAC06A}|SalesforceApp\\SalesforceApp.csproj|solutionrelative:salesforceapp\\services\\mappingconfigurationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2E6EC2-C1E9-28E7-BB48-173FDAFAC06A}|SalesforceApp\\SalesforceApp.csproj|c:\\users\\ecorbiser\\onedrive - bitner henry insurance group\\repos\\salesforceupdate\\salesforceapp\\salesforceapp\\models\\mappingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2E6EC2-C1E9-28E7-BB48-173FDAFAC06A}|SalesforceApp\\SalesforceApp.csproj|solutionrelative:salesforceapp\\models\\mappingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED14F0B-807C-4528-ABF7-93A539D82C74}|SalesforceWebApp\\SalesforceWebApp.csproj|c:\\users\\ecorbiser\\onedrive - bitner henry insurance group\\repos\\salesforceupdate\\salesforceapp\\salesforcewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED14F0B-807C-4528-ABF7-93A539D82C74}|SalesforceWebApp\\SalesforceWebApp.csproj|solutionrelative:salesforcewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SalesforceAccountMatching.cshtml",
+              "DocumentMoniker": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceWebApp\\Pages\\SalesforceAccountMatching.cshtml",
+              "RelativeDocumentMoniker": "SalesforceWebApp\\Pages\\SalesforceAccountMatching.cshtml",
+              "ToolTip": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceWebApp\\Pages\\SalesforceAccountMatching.cshtml",
+              "RelativeToolTip": "SalesforceWebApp\\Pages\\SalesforceAccountMatching.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-21T13:05:29.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SalesforceAccountMatching.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceWebApp\\Pages\\SalesforceAccountMatching.cshtml.cs",
+              "RelativeDocumentMoniker": "SalesforceWebApp\\Pages\\SalesforceAccountMatching.cshtml.cs",
+              "ToolTip": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceWebApp\\Pages\\SalesforceAccountMatching.cshtml.cs",
+              "RelativeToolTip": "SalesforceWebApp\\Pages\\SalesforceAccountMatching.cshtml.cs",
+              "ViewState": "AgIAAGABAAAAAAAAAAAiwIYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T13:04:45.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MappingConfigurationService.cs",
+              "DocumentMoniker": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceApp\\Services\\MappingConfigurationService.cs",
+              "RelativeDocumentMoniker": "SalesforceApp\\Services\\MappingConfigurationService.cs",
+              "ToolTip": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceApp\\Services\\MappingConfigurationService.cs",
+              "RelativeToolTip": "SalesforceApp\\Services\\MappingConfigurationService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T13:03:55.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MappingConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceApp\\Models\\MappingConfiguration.cs",
+              "RelativeDocumentMoniker": "SalesforceApp\\Models\\MappingConfiguration.cs",
+              "ToolTip": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceApp\\Models\\MappingConfiguration.cs",
+              "RelativeToolTip": "SalesforceApp\\Models\\MappingConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T13:02:53.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "SalesforceWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\ecorbiser\\OneDrive - Bitner Henry Insurance Group\\repos\\SalesforceUpdate\\SalesforceApp\\SalesforceWebApp\\Program.cs",
+              "RelativeToolTip": "SalesforceWebApp\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T18:33:52.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+﻿@page
+@model SalesforceApp.Pages.AccountsModel
+
+<h2>Account Records</h2>
+
+<p>
+    Records Found: @Model.Accounts.Count
+</p>
+
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>Account Id</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Phone</th>
+            <th>State</th>
+            <th>Last Modified</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var account in Model.Accounts)
+        {
+            <tr>
+                <td>@account.Id</td>
+                <td>@account.Name</td>
+                <td>@account.Type</td>
+                <td>@account.Phone</td>
+                <td>@account.BillingState</td>
+                <td>@account.LastModifiedDate</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,174 @@
+﻿@page
+@model SalesforceWebApp.Pages.SalesforceAccountMatchingModel
+
+<h2>Salesforce Account Matching</h2>
+@if (Model.CurrentStep == UIEnum.MatchingStep.Upload)
+{
+    <form method="post" enctype="multipart/form-data">
+        <label>Header Row:</label>
+
+
+        <select asp-for="HeaderRowNumber">
+            @for (int i = 1; i <= 10; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
+
+        <br />
+        <br />
+
+        <label>Select a file:</label>
+
+        <br />
+
+        <input asp-for="UploadFile"
+               type="file"
+               accept=".csv,.xls,.xlsx" />
+
+        <br />
+        <br />
+
+        <button type="submit">
+            Upload File
+        </button>
+
+        @if (!string.IsNullOrEmpty(Model.Message)
+        {
+            <p>@Model.Message</p>
+        }
+
+    </form>
+}
+@if (Model.CurrentStep == UIEnum.MatchingStep.ReviewHeaders)
+{
+    <h3>Detected Headers</h3>
+
+    <ul>
+        @foreach (var header in Model.Headers)
+        {
+            <li>@header</li>
+        }
+    </ul>
+
+    <form method="post" asp-page-handler="AcceptHeaders">
+        <button type="submit">
+            Accept and Continue
+        </button>
+        <button type="submit" asp-page-handler="OnPostStartOver">
+            Go Back to Upload
+        </button>
+    </form>
+}
+@if (Model.CurrentStep == UIEnum.MatchingStep.MapFields)
+{
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <p>@Model.Message</p>
+    }
+
+    <form method="post">
+        @if (Model.SavedMappingConfigurationNames.Any())
+        {
+            <label>Saved mappings:</label>
+            <select asp-for="SelectedMappingConfigurationName">
+                <option value="">-- Select a saved mapping --</option>
+                @foreach (var name in Model.SavedMappingConfigurationNames)
+                {
+                    <option value="@name">@name</option>
+                }
+            </select>
+            <button type="submit" asp-page-handler="LoadMapping">
+                Load Mapping
+            </button>
+            <button type="submit"
+                    asp-page-handler="DeleteMapping"
+                    onclick="return confirm('Delete the selected mapping configuration? This cannot be undone.');">
+                Delete Mapping
+            </button>
+            <br />
+            <br />
+        }
+
+        <p>
+            Imported Header Count: @Model.Headers.Count<br />
+            Map Imported Headers to the Salesforce Fields
+        </p>
+        <button type="submit" asp-page-handler="MapFields">
+            Accept and Match To Salesforce
+        </button>
+        <button type="submit" asp-page-handler="OnPostStartOver">
+            Go Back to Upload
+        </button>
+        <table>
+
+            @for (int i = 0; i < Model.MappingRows.Count; i++)
+            {
+                <tr>
+                    <td>
+
+                        @Model.MappingRows[i].SalesforceField
+                    <td style="padding-left: 10px">
+                        <input type="hidden"
+                               name="MappingRows[@i].SalesforceField"
+                               value="@Model.MappingRows[i].SalesforceField" />
+                    </td>
+
+                    <td>
+                        <select name="MappingRows[@i].SelectedHeader">
+                            <option value="">Not Mapped</option>
+
+                            @foreach (var header in Model.Headers)
+                            {
+                                @if (header == Model.MappingRows[i].SelectedHeader)
+                                {
+                                    <option value="@header" selected="selected">@header</option>
+                                }
+                                else
+                                {
+                                    <option value="@header">@header</option>
+                                }
+                            }
+                        </select>
+                    </td>
+                </tr>
+            }
+        </table>
+        <br />
+        <p>
+            <b>
+                The fields mapped to the Billing and Shipping Address fields will be compared to both the Billing and Shipping Addresses in Salesforce. <br />
+                If the imported file only has one address field, only use Billing Address.
+            </b><br />
+            <br />
+            Warning: Matching Rules that do not match a unique identifier require more than one value to evaluate. <br />
+            If no rules can be evaluated a status of "No Rules Executed" will be returned. This is different than a status of "No Matches".
+        </p>
+
+        <br />
+        <label>Save this mapping as:</label>
+        <input asp-for="NewMappingConfigurationName" type="text" placeholder="e.g. Vendor Export Format" />
+        <button type="submit" asp-page-handler="SaveMapping">
+            Save Mapping
+        </button>
+    </form>
+}
+@if (Model.CurrentStep == UIEnum.MatchingStep.Results)
+{
+    <h3>Matching Results</h3>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <p>@Model.Message</p>
+    }
+
+    <a href="?handler=DownloadResults" class="btn btn-primary">
+        Download Results
+    </a>
+
+    <form method="post" asp-page-handler="StartOver">
+        <button type="submit">
+            Start Over
+        </button>
+    </form>
+}
