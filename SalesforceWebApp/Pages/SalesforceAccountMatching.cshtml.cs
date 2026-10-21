@@ -294,10 +294,41 @@ namespace SalesforceWebApp.Pages
             using var stream = new FileStream(tempPath, FileMode.Open, FileAccess.Read);
             if (UploadFile.FileName.EndsWith(".csv", StringComparison.OrdinalIgnoreCase))
             {
-                Message = "CSV file processing is not implemented yet.";
-                CurrentStep = UIEnum.MatchingStep.Upload;
-                return;
-                //CsvImportService csvImportService = new CsvImportService();
+                CsvImportService csvImportService = new CsvImportService();
+                Headers = csvImportService.GetHeaders(stream, HeaderRowNumber);
+                if (Headers != null && Headers.Count > 0)
+                {
+                    Message = $"Found {Headers.Count} headers. Accept and continue to map fields. " +
+                        $"\nTo start over, select Header Row and Upload a new File.";
+                    HttpContext.Session.SetString("Headers", JsonSerializer.Serialize(Headers));
+                }
+                else
+                {
+                    CurrentStep = UIEnum.MatchingStep.Upload;
+                    Message = "No headers found in the uploaded file.";
+                    return;
+                }
+                HttpContext.Session.SetInt32("HeaderRowNumber", HeaderRowNumber);
+                CurrentStep = UIEnum.MatchingStep.ReviewHeaders;
+            }
+            else if (UploadFile.FileName.EndsWith(".xls", StringComparison.OrdinalIgnoreCase) || UploadFile.FileName.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase))
+            {
+                ExcelImportService excelImportService = new ExcelImportService();
+                Headers = excelImportService.GetHeaders(stream, HeaderRowNumber);
+                if (Headers != null)
+                {
+                    Message = $"Found {Headers.Count} headers. Accept and continue to map fields. " +
+                        $"\nTo start over, select Header Row and Upload a new File.";
+                    HttpContext.Session.SetString("Headers", JsonSerializer.Serialize(Headers));
+                }
+                else
+                {
+                    CurrentStep = UIEnum.MatchingStep.Upload;
+                    Message = "No headers found in the uploaded file.";
+                    return;
+                }
+                HttpContext.Session.SetInt32("HeaderRowNumber", HeaderRowNumber);
+                CurrentStep = UIEnum.MatchingStep.ReviewHeaders;
 
             }
             else if (UploadFile.FileName.EndsWith(".xls", StringComparison.OrdinalIgnoreCase) || UploadFile.FileName.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase))

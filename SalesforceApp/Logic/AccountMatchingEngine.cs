@@ -34,10 +34,9 @@ namespace SalesforceApp.Logic
             var accounts = Accounts;
             List<ImportedRow> importedRows = new List<ImportedRow>();
             var request = Request;
-            if (Request.FileName.EndsWith(".csv", StringComparison.OrdinalIgnoreCase))
+            if (Request.FileName.EndsWith(".csv", StringComparison.OrdinalIgnoreCase) && Request.MappingRows.Count > 0)
             {
-                //not implemented yet
-                throw new ArgumentException("CSV file format is not supported yet.");
+                importedRows = ImportedRowBuilder.ImportedRowListCsv(request);
             }
             else if (Request.FileName.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase) && Request.MappingRows.Count > 0)
             {

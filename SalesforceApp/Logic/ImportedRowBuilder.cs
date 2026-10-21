@@ -26,5 +26,21 @@ namespace SalesforceApp.Logic
             }
             return importedRows;
         }
+
+        public static List<ImportedRow> ImportedRowListCsv(AccountMatchingRequest request)
+        {
+            List<ImportedRow> importedRows = new List<ImportedRow>();
+            Stream stream = request.FileStream;
+            int headerRowIndex = request.HeaderRowNumber;
+            int rowNumber = 1;
+            // Take the stream and create the Imported Row objects
+            CsvImportService csvImportService = new CsvImportService();
+            var rowData = csvImportService.GetDataRows(stream, headerRowIndex);
+            foreach (var row in rowData)
+            {
+                importedRows.Add(new ImportedRow(rowNumber++, row));
+            }
+            return importedRows;
+        }
     }
 }

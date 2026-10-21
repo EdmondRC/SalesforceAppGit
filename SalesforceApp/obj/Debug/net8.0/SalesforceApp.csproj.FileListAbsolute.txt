@@ -1,0 +1,13 @@
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\bin\Debug\net8.0\SalesforceApp.deps.json
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\bin\Debug\net8.0\SalesforceApp.dll
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\bin\Debug\net8.0\SalesforceApp.pdb
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\SalesforceApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\SalesforceApp.AssemblyInfoInputs.cache
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\SalesforceApp.AssemblyInfo.cs
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\SalesforceApp.csproj.CoreCompileInputs.cache
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\SalesforceApp.dll
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\refint\SalesforceApp.dll
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\SalesforceApp.pdb
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\ref\SalesforceApp.dll
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\SalesforceApp.csproj.AssemblyReference.cache
+C:\Users\ecorbiser\OneDrive - Bitner Henry Insurance Group\repos\SalesforceUpdate\SalesforceApp\SalesforceApp\obj\Debug\net8.0\SalesforceApp.sourcelink.json
